@@ -40,6 +40,7 @@ namespace TicTacToe
 
             turn = !turn;
             b.Enabled = false;
+            turn_count++;
 
             checkForWinner();
         }
@@ -68,6 +69,11 @@ namespace TicTacToe
                     winner = "X";
                 MessageBox.Show(winner + " Wins!", "Congratulations!");
             }//end if
+            else
+            {
+                if(turn_count == 9)
+                    MessageBox.Show("Draw!", "Bummer!");
+            }
 
         }// End checkForWinner
 

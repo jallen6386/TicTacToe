@@ -57,8 +57,16 @@ namespace TicTacToe
             else if ((UxC1.Text == UxC2.Text) && (UxC2.Text == UxC3.Text) && (!UxC1.Enabled))
                 there_is_a_winner = true;
 
+            //vertical checks
+            else if ((UxA1.Text == UxB1.Text) && (UxB1.Text == UxC1.Text) && (!UxA1.Enabled))
+                there_is_a_winner = true;
+            else if ((UxA2.Text == UxB2.Text) && (UxB2.Text == UxC2.Text) && (!UxA2.Enabled))
+                there_is_a_winner = true;
+            else if ((UxA3.Text == UxB3.Text) && (UxB3.Text == UxC3.Text) && (!UxA3.Enabled))
+                there_is_a_winner = true;
 
-            if(there_is_a_winner)
+
+            if (there_is_a_winner)
             {
                 disableButtons();
 

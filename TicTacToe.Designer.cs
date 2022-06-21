@@ -86,93 +86,104 @@ namespace TicTacToe
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // UxA1
             // 
             this.UxA1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxA1.Location = new System.Drawing.Point(15, 27);
+            this.UxA1.Location = new System.Drawing.Point(15, 39);
             this.UxA1.Name = "UxA1";
             this.UxA1.Size = new System.Drawing.Size(75, 75);
             this.UxA1.TabIndex = 1;
             this.UxA1.UseVisualStyleBackColor = true;
+            this.UxA1.Click += new System.EventHandler(this.button_click);
             // 
             // UxA2
             // 
             this.UxA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxA2.Location = new System.Drawing.Point(96, 27);
+            this.UxA2.Location = new System.Drawing.Point(96, 39);
             this.UxA2.Name = "UxA2";
             this.UxA2.Size = new System.Drawing.Size(75, 75);
             this.UxA2.TabIndex = 2;
             this.UxA2.UseVisualStyleBackColor = true;
+            this.UxA2.Click += new System.EventHandler(this.button_click);
             // 
             // UxA3
             // 
             this.UxA3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxA3.Location = new System.Drawing.Point(177, 27);
+            this.UxA3.Location = new System.Drawing.Point(177, 39);
             this.UxA3.Name = "UxA3";
             this.UxA3.Size = new System.Drawing.Size(75, 75);
             this.UxA3.TabIndex = 3;
             this.UxA3.UseVisualStyleBackColor = true;
+            this.UxA3.Click += new System.EventHandler(this.button_click);
             // 
             // UxB1
             // 
             this.UxB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxB1.Location = new System.Drawing.Point(15, 108);
+            this.UxB1.Location = new System.Drawing.Point(15, 120);
             this.UxB1.Name = "UxB1";
             this.UxB1.Size = new System.Drawing.Size(75, 75);
             this.UxB1.TabIndex = 4;
             this.UxB1.UseVisualStyleBackColor = true;
+            this.UxB1.Click += new System.EventHandler(this.button_click);
             // 
             // UxB2
             // 
             this.UxB2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxB2.Location = new System.Drawing.Point(96, 108);
+            this.UxB2.Location = new System.Drawing.Point(96, 120);
             this.UxB2.Name = "UxB2";
             this.UxB2.Size = new System.Drawing.Size(75, 75);
             this.UxB2.TabIndex = 5;
             this.UxB2.UseVisualStyleBackColor = true;
+            this.UxB2.Click += new System.EventHandler(this.button_click);
             // 
             // UxB3
             // 
             this.UxB3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxB3.Location = new System.Drawing.Point(177, 108);
+            this.UxB3.Location = new System.Drawing.Point(177, 120);
             this.UxB3.Name = "UxB3";
             this.UxB3.Size = new System.Drawing.Size(75, 75);
             this.UxB3.TabIndex = 6;
             this.UxB3.UseVisualStyleBackColor = true;
+            this.UxB3.Click += new System.EventHandler(this.button_click);
             // 
             // UxC1
             // 
             this.UxC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxC1.Location = new System.Drawing.Point(15, 189);
+            this.UxC1.Location = new System.Drawing.Point(15, 201);
             this.UxC1.Name = "UxC1";
             this.UxC1.Size = new System.Drawing.Size(75, 75);
             this.UxC1.TabIndex = 7;
             this.UxC1.UseVisualStyleBackColor = true;
+            this.UxC1.Click += new System.EventHandler(this.button_click);
             // 
             // UxC2
             // 
             this.UxC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxC2.Location = new System.Drawing.Point(96, 189);
+            this.UxC2.Location = new System.Drawing.Point(96, 201);
             this.UxC2.Name = "UxC2";
             this.UxC2.Size = new System.Drawing.Size(75, 75);
             this.UxC2.TabIndex = 8;
             this.UxC2.UseVisualStyleBackColor = true;
+            this.UxC2.Click += new System.EventHandler(this.button_click);
             // 
             // UxC3
             // 
             this.UxC3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UxC3.Location = new System.Drawing.Point(177, 189);
+            this.UxC3.Location = new System.Drawing.Point(177, 201);
             this.UxC3.Name = "UxC3";
             this.UxC3.Size = new System.Drawing.Size(75, 75);
             this.UxC3.TabIndex = 9;
             this.UxC3.UseVisualStyleBackColor = true;
+            this.UxC3.Click += new System.EventHandler(this.button_click);
             // 
             // TicTacToe
             // 

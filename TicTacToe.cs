@@ -65,6 +65,11 @@ namespace TicTacToe
             else if ((UxA3.Text == UxB3.Text) && (UxB3.Text == UxC3.Text) && (!UxA3.Enabled))
                 there_is_a_winner = true;
 
+            //diagonal checks
+            else if ((UxA1.Text == UxB2.Text) && (UxB2.Text == UxC3.Text) && (!UxA1.Enabled))
+                there_is_a_winner = true;
+            else if ((UxA3.Text == UxB2.Text) && (UxB2.Text == UxC1.Text) && (!UxC1.Enabled))
+                there_is_a_winner = true;
 
             if (there_is_a_winner)
             {

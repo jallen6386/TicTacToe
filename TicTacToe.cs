@@ -40,12 +40,49 @@ namespace TicTacToe
 
             turn = !turn;
             b.Enabled = false;
+
+            checkForWinner();
         }
 
         private void checkForWinner()
         {
+            bool there_is_a_winner = false;
+
+            //horizontal checks
+            if ((UxA1.Text == UxA2.Text) && (UxA2.Text == UxA3.Text) && (!UxA1.Enabled))
+                there_is_a_winner = true;
+            else if ((UxB1.Text == UxB2.Text) && (UxB2.Text == UxB3.Text) && (!UxB1.Enabled))
+                there_is_a_winner = true;
+            else if ((UxC1.Text == UxC2.Text) && (UxC2.Text == UxC3.Text) && (!UxC1.Enabled))
+                there_is_a_winner = true;
+
+
+            if(there_is_a_winner)
+            {
+                disableButtons();
+
+                String winner = "";
+                if (turn)
+                    winner = "O";
+                else
+                    winner = "X";
+                MessageBox.Show(winner + " Wins!", "Congratulations!");
+            }//end if
 
         }// End checkForWinner
+
+        private void disableButtons()
+        {
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button b = (Button)c;
+                    b.Enabled = false;
+                }//end foreach
+            }//end try
+            catch { }
+        }
 
     }
 }
